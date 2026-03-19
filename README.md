@@ -1,49 +1,51 @@
-# Market Intel Dashboard - Frontend Technical Assessment
+# Frontend Practical Assessment (2 Hours)
 
-## Project Overview
+:pushpin: Overview
 
-Welcome to the **Market Intelligence Dashboard** technical assessment. 
+This repository contains a partially implemented **Market Intelligence Dashboard** application built using:
 
-This repository contains a React-based dashboard used by our internal analysts to monitor product performance, user activity, and crypto market trends. The application aggregates data from multiple public APIs and visualizes them through interactive charts and tables.
+*   **Framework**: React + Vite
+*   **Language**: TypeScript
+*   **State Management**: Redux Toolkit
+*   **Styling**: Tailwind CSS
+*   **Data Fetching**: Axios
+*   **Charts**: Recharts
+*   **Icons**: Lucide React
 
-However, the codebase has accumulated significant "technical debt" over time. Several bugs have been reported by the analytics team that affect data accuracy and user experience.
+The application includes a dashboard table view, real-time activity logs, and trend charts. It aggregates data from multiple public APIs.
 
-Your task is to identify, diagnose, and fix the **6 primary issues** listed below.
+However, the codebase has accumulated significant "technical debt," and several bugs have been reported.
 
-## Tech Stack
+:hourglass_flowing_sand: Time Limit
 
-- **Framework**: React + Vite
-- **Language**: TypeScript
-- **State Management**: Redux Toolkit
-- **Styling**: Tailwind CSS
-- **Data Fetching**: Axios
-- **Charts**: Recharts
-- **Icons**: Lucide React
+You have 2 hours to complete this assessment.
+Focus on:
+- Correctness
+- Clean implementation
+- Proper state handling
+Avoid over-engineering.
 
-## Setup Instructions
+:hammer_and_wrench: Setup Instructions
 
-### Step 1: Install Dependencies
+:one: Install dependencies
 ```bash
 npm install
 ```
 
-### Step 2: Start Development Server
+:two: Run frontend
 ```bash
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`.
+:globe_with_meridians: API Information
 
-## API Information
+This application aggregates data from multiple public APIs:
+- **DummyJSON**: For product inventory and category data. (https://dummyjson.com)
+- **RandomUser**: For simulating real-time user activity logs. (https://randomuser.me)
+- **CoinGecko**: For fetching live market price trends (BTC/USD). (https://api.coingecko.com)
 
-The dashboard uses the following public APIs:
-- **DummyJSON**: For product inventory and category data.
-- **RandomUser**: For simulating real-time user activity logs.
-- **CoinGecko**: For fetching live market price trends (BTC/USD).
 
----
-
-## Technical Challenges
+:clipboard: Tasks To Complete
 
 Your task is to identify and resolve the following **6 core issues**. These range from simple logic errors to deep architectural "legacy" bombs.
 
@@ -73,9 +75,40 @@ Intermittently, navigating between pages or refreshing causes the entire dashboa
 
 ---
 
-## Technical Expectations
+:package: Submission Instructions
 
-Candidates are expected to demonstrate:
+1. Fork this repository.
+2. Create a new branch: `feature/your-name`
+3. Make clean and meaningful commits.
+4. Push your fork.
+5. Create a Pull Request.
+6. In PR description include:
+   - What issues you identified
+   - What changes you made
+   - Any assumptions
+   - What improvements you would make with more time
+
+:bar_chart: Evaluation Criteria
+
+You will be evaluated on:
+- Debugging ability
+- State management clarity
+- API integration correctness
+- Code structure & readability
+- Edge case handling
+- Commit quality
+- Explanation in PR
+
+:dart: What We Are Looking For
+
+This assessment evaluates:
+- Your ability to work with an existing codebase
+- Your problem-solving approach
+- Your understanding of React state & API flow
+- Your ability to implement features cleanly
+- Your engineering maturity
+
+Technical expectations:
 - **Profiling**: Using React DevTools Profiler to hunt re-renders.
 - **Memory Analysis**: Finding detached nodes and leaked listeners in Chrome DevTools.
 - **Architectural Depth**: Implementing `AbortController` or similar for async safety.
